@@ -26,6 +26,13 @@
             font-family: var(--fonte1);
 
         }
+        header a:hover , footer a:hover {
+            padding: 3px;
+            border-radius: 4px;
+            color: black;
+            background-color: white;
+
+        }
         header {
             background-color: black;
             color: white;
@@ -42,25 +49,26 @@
             padding: bottom 50px; ;
         }
         a{
+            margin-bottom: 3px;
+            padding: 3px;
             color: white;
             text-decoration: none;
             font-weight: bolder;
         }
-        a:hover{
-            text-decoration: underline;
-        }
         section{
-            padding-top: 10%vh;
-            padding-bottom: 10%vh;
-            line-height: 2em;
+            padding-top: 10vh;
+            padding-bottom: 10vh;
+            line-height: 1.5em;
+            padding-left: 30px;
             font-family: var(--fonte3);
-            font-size: 5vw;
+            font-size: 3.5vw;
         }
         section>p{
             padding-bottom: 2em;
         }
         section.normal{
             background-color: white;
+            color: black;
         }
         section.imagem{ 
             background-color: black;
@@ -70,6 +78,7 @@
             background-attachment: fixed;
         }
         section.imagem > p{
+            width: 400px;
             display: inline-block;
             padding: 5px;
             background-color: rgba(0, 0, 0, 0.514);
@@ -78,14 +87,14 @@
         }
         section#img01{
             background-image: url(imagens/background001.jpg);
-            background-position: right center;
             background-size: cover;
-
+            background-position: right center;
         }
         section#img02{
             background-image: url(imagens/background002.jpg);
-            background-position: right center;
-            background-size: cover;
+             background-size: cover;
+             background-position: right center;
+           
 
 
         }
@@ -98,9 +107,9 @@
     </style>
 </head>
 <body>
-    <h1>Cordel Moderno</h1>
+
     <header>
-        
+            <h1>Cordel Moderno</h1>
         <p>
             <a href="https://www.recantodasletras.com.br/poesias/3186743">Por Milton Duarte</a>
             
@@ -159,7 +168,7 @@
             </p>
         </section>
 
-        //---
+
 
         <section class="normal">
             <p>
@@ -173,9 +182,9 @@
             </p>
         </section>
 
-        //---
 
-        <section class="imagem" id="img03">
+
+        <section class="normal" >
             <p>
                 Agora, escrevo e envio
                 Chegando na mesma hora
@@ -199,7 +208,7 @@
             </p>
         </section>
         <footer>
-            <p>site criado por deivisson oneg para o curso em video</p>
+            <p>site criado por Deivisson Oneg</p>
         </footer>
     
 </body>
